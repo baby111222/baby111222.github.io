@@ -1,74 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>新闻摘要（参考中国新闻网）</title>
-  <meta name="description" content="基于中国新闻网相关文章整理的摘要与跳转链接。">
-
-  <!-- Open Graph（用于微信/社交平台缩略图） -->
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="新闻摘要：参考中国新闻网报道">
-  <meta property="og:description" content="这是根据中国新闻网该报道整理的摘要与原文跳转。">
-  <meta property="og:url" content="https://baby111222.github.io/article.html">
-  <!-- 可替换为你仓库内的图片，如 https://baby111222.github.io/assets/og.jpg -->
-  <meta property="og:image" content="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1200&h=630&q=80">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="baby111222.github.io">
-
-  <!-- Twitter 兜底（可选） -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="新闻摘要：参考中国新闻网报道">
-  <meta name="twitter:description" content="根据公开报道整理的简要摘要与原文跳转。">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1200&h=630&q=80">
-
-  <link rel="canonical" href="https://baby111222.github.io/article.html">
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,PingFang SC,Microsoft Yahei,\5FAE\8F6F\96C5\9ED1,sans-serif;line-height:1.6;margin:0;padding:0;color:#222}
-    header,main,footer{max-width:840px;margin:0 auto;padding:16px}
-    header{border-bottom:1px solid #eee}
-    h1{font-size:24px;margin:.6em 0}
-    .meta{color:#666;font-size:14px}
-    .hero{margin:16px 0}
-    .hero img{max-width:100%;height:auto;border-radius:8px}
-    .note{background:#fff7e6;border:1px solid #ffe7ba;border-radius:8px;padding:12px;color:#8a6116;margin:16px 0}
-    .summary{padding-left:18px}
-    .summary li{margin:.4em 0}
-    a{color:#0b5bd3;text-decoration:none}
-    a:hover{text-decoration:underline}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 微信核心OGP标签（完全对齐新闻网配置逻辑） -->
+    <meta property="og:type" content="website"> <!-- 页面类型：网站（资讯类用article） -->
+    <meta property="og:title" content="自定义你的页面标题"> <!-- 转发卡片显示的标题 -->
+    <meta property="og:image" content="https://picsum.photos/800/800"> <!-- 微信优先抓取的缩略图（HTTPS+800×800px+无防盗链） -->
+    <meta property="og:description" content="自定义你的页面核心描述，转发时会显示在标题下方"> <!-- 转发卡片摘要 -->
+    <meta property="og:url" content="https://baby111222.github.io/index.html"> <!-- 页面唯一URL（必须与实际访问地址一致） -->
+    <meta property="og:site_name" content="网站名称（可选）"> <!-- 转发卡片顶部显示的站点名 -->
+    
+    <!-- 微信额外优化标签（提升抓取优先级） -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- 兼容Twitter同时适配微信 -->
+    <meta name="twitter:image" content="https://picsum.photos/800/800"> <!-- 冗余备份，避免og:image失效 -->
+    <meta name="description" content="自定义你的页面核心描述，与og:description一致（微信备份识别）">
+    
+    <title>自定义你的页面标题（与og:title一致）</title>
 </head>
 <body>
-  <header>
-    <h1>新闻摘要（参考中国新闻网）</h1>
-    <div class="meta">来源参考：<a href="https://m.chinanews.com/wap/detail/zw/gn/2025/11-04/10509728.shtml" target="_blank" rel="noopener nofollow noreferrer">中国新闻网移动端原文</a></div>
-  </header>
-  <main>
-    <div class="hero">
-      <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1200&h=630&q=80" alt="配图（示意）">
+    <!-- 页面正文内容（保留你的原有内容，或添加以下标准化结构，提升微信识别容错率） -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+        <!-- 正文首图（微信备用抓取逻辑：若OGP标签失效，会提取正文第一张图） -->
+        <img src="https://picsum.photos/800/800" alt="页面封面图" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
+        <h1 style="font-size: 24px; margin: 20px 0;">自定义你的页面标题（与og:title一致）</h1>
+        <p style="font-size: 16px; line-height: 1.6;">你的页面正文内容...（可保留原有内容，无需修改）</p>
     </div>
-
-    <div class="note">
-      说明：为避免侵犯版权，本页不复刻原文内容，仅提供摘要占位与原文跳转。如需全文展示，请确保拥有相应授权或自行粘贴具有授权的文字内容。
-    </div>
-
-    <section>
-      <h2>简要要点（占位）</h2>
-      <ul class="summary">
-        <li>要点 1：在此填写你基于原报道自行撰写的摘要。</li>
-        <li>要点 2：避免直接粘贴受版权保护的全文或标题。</li>
-        <li>要点 3：可加入时间、地点、核心事件和影响等信息。</li>
-      </ul>
-    </section>
-
-    <p>
-      阅读详情：<a href="https://m.chinanews.com/wap/detail/zw/gn/2025/11-04/10509728.shtml" target="_blank" rel="noopener nofollow noreferrer">前往中国新闻网查看原文</a>
-    </p>
-  </main>
-  <footer>
-    <small>© 本页为个人学习与演示用途，原文版权归原网站所有。</small>
-  </footer>
 </body>
 </html>
-
