@@ -1,33 +1,38 @@
+
 <!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>微信分享缩略图测试</title>
-  <meta name="description" content="这是一个测试网页，用于演示在微信内分享时如何显示自定义缩略图。">
+  <title>微信分享缩略图测试（无公众号）</title>
+  <meta name="description" content="无公众号场景下的微信分享卡片测试页，使用 Open Graph 元标签和可抓取大图。">
 
-  <!-- Open Graph 元信息（务必放在 <head>，且在最前面） -->
   <link rel="canonical" href="https://baby111222.github.io/">
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="微信分享缩略图测试页">
-  <meta property="og:description" content="这是一个测试网页，用于演示如何在微信中分享时显示自定义缩略图。">
-  <meta property="og:image" content="https://baby111222.github.io/300x300.jpg?v=20251106091826">
-  <meta property="og:image:secure_url" content="https://baby111222.github.io/300x300.jpg?v=20251106091826">
-  <meta property="og:url" content="https://baby111222.github.io/?v=20251106091826">
+  <meta property="og:title" content="微信分享缩略图测试（无公众号）">
+  <meta property="og:description" content="使用 OG 标签和首屏可抓取图片，尽量让微信分享卡片显示自定义缩略图。">
+  <meta property="og:image" content="https://baby111222.github.io/cover-600.png?v=20251106">
+  <meta property="og:image:secure_url" content="https://baby111222.github.io/cover-600.png?v=20251106">
+  <meta property="og:url" content="https://baby111222.github.io/?v=20251106">
   <meta property="og:site_name" content="baby111222 测试站">
-  <meta property="og:image:width" content="300">
-  <meta property="og:image:height" content="300">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
 </head>
-<body style="font-family: system-ui, sans-serif; padding: 20px; text-align: center;">
-  <!-- 将“可抓取大图”放在 body 顶部，不要放在 head -->
+<body style="font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, sans-serif; padding:24px; text-align:center;">
+  <!-- 可抓取大图（不要对 img 本身 display:none） -->
   <div style="height:0; overflow:hidden;">
-    <img src="https://baby111222.github.io/300x300.jpg?v=20251106091826" alt="缩略图" width="300" height="300" loading="eager">
+    <img src="https://baby111222.github.io/cover-600.png?v=20251106" width="600" height="600" alt="share cover" loading="eager">
   </div>
 
-  <h1>微信分享缩略图测试页</h1>
-  <p>这是一个测试页面，用于验证微信分享时能否显示自定义缩略图。</p>
-  <img src="https://baby111222.github.io/300x300.jpg?v=20251106091826" alt="缩略图示例" width="300" height="300" style="border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); margin-top: 10px;">
-  <p style="margin-top:20px; color:#666;">把这个链接发到微信聊天框测试分享效果（已带版本参数强制刷新缓存）：</p>
-  <code>https://baby111222.github.io/?v=20251106091826</code>
+  <h1>微信分享缩略图测试（无公众号）</h1>
+  <p>把下面的地址粘贴到微信聊天框，看是否出现缩略图：</p>
+  <code style="padding:6px 10px; background:#f3f4f6; border-radius:6px; display:inline-block;">https://baby111222.github.io/?v=20251106</code>
+
+  <div style="margin:24px 0;">
+    <img src="cover-600.png" width="300" height="300" alt="cover preview" style="border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,.1);">
+  </div>
+
+  <p style="color:#666">如果卡片一直不出图，试试把 <code>?v=20251106</code> 改成新的时间戳，或将图片文件名改成 <code>cover-600-2.png</code> 并同步更新上面的链接。</p>
 </body>
 </html>
