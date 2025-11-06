@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- OG标签 -->
+  <meta property="og:title" content="世界互联网大会乌镇峰会" />
+  <meta property="og:type" content="event" />
+  <meta property="og:url" content="https://example.com/wuzhen-summit" />
+  <meta property="og:image" content="https://example.com/summit.jpg" />
+</head>
+<body>
+  <h1>乌镇峰会详情</h1>
+</body>
+</html>
