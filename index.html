@@ -6,26 +6,28 @@
   <title>微信分享缩略图测试</title>
   <meta name="description" content="这是一个测试网页，用于演示在微信内分享时如何显示自定义缩略图。">
 
-  <!-- Open Graph 元信息 -->
+  <!-- Open Graph 元信息（务必放在 <head>，且在最前面） -->
+  <link rel="canonical" href="https://baby111222.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="微信分享缩略图测试页">
   <meta property="og:description" content="这是一个测试网页，用于演示如何在微信中分享时显示自定义缩略图。">
-  <meta property="og:image" content="https://baby111222.github.io/300x300.jpg">
-  <meta property="og:url" content="https://baby111222.github.io/">
+  <meta property="og:image" content="https://baby111222.github.io/300x300.jpg?v=20251106091826">
+  <meta property="og:image:secure_url" content="https://baby111222.github.io/300x300.jpg?v=20251106091826">
+  <meta property="og:url" content="https://baby111222.github.io/?v=20251106091826">
   <meta property="og:site_name" content="baby111222 测试站">
   <meta property="og:image:width" content="300">
   <meta property="og:image:height" content="300">
-
-  <!-- 防止微信爬虫抓不到图，添加可抓取图 -->
-  <div style="height:0; overflow:hidden;">
-    <img src="https://baby111222.github.io/300x300.jpg" alt="缩略图" width="300" height="300" loading="eager">
-  </div>
 </head>
 <body style="font-family: system-ui, sans-serif; padding: 20px; text-align: center;">
+  <!-- 将“可抓取大图”放在 body 顶部，不要放在 head -->
+  <div style="height:0; overflow:hidden;">
+    <img src="https://baby111222.github.io/300x300.jpg?v=20251106091826" alt="缩略图" width="300" height="300" loading="eager">
+  </div>
+
   <h1>微信分享缩略图测试页</h1>
   <p>这是一个测试页面，用于验证微信分享时能否显示自定义缩略图。</p>
-  <img src="https://baby111222.github.io/300x300.jpg" alt="缩略图示例" width="300" height="300" style="border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); margin-top: 10px;">
-  <p style="margin-top:20px; color:#666;">复制链接到微信聊天框测试分享效果：</p>
-  <code>https://baby111222.github.io/</code>
+  <img src="https://baby111222.github.io/300x300.jpg?v=20251106091826" alt="缩略图示例" width="300" height="300" style="border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); margin-top: 10px;">
+  <p style="margin-top:20px; color:#666;">把这个链接发到微信聊天框测试分享效果（已带版本参数强制刷新缓存）：</p>
+  <code>https://baby111222.github.io/?v=20251106091826</code>
 </body>
 </html>
