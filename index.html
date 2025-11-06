@@ -1,33 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 微信核心OGP标签（完全对齐新闻网配置逻辑） -->
-    <meta property="og:type" content="website"> <!-- 页面类型：网站（资讯类用article） -->
-    <meta property="og:title" content="自定义侬的页面标题"> <!-- 转发卡片显示的标题 -->
-    <meta property="og:image" content="https://baby111222.github.io/300x300.jpg"> <!-- 微信优先抓取的缩略图（HTTPS+800×800px+无防盗链） -->
-    <meta property="og:description" content="自定义你的页面核心scription，转发时会显示在标题下方"> <!-- 转发卡片摘要 -->
-    <meta property="og:url" content="https://baby111222.github.io/index.html"> <!-- 页面唯一URL（必须与实际访问地址一致） -->
-    <meta property="og:site_name" content="网站名称网站名称网站名称网站名称"> <!-- 转发卡片顶部显示的站点名 -->
-    
-    <!-- 微信额外优化标签（提升抓取优先级） -->
-    <meta name="twitter:card" content="summary_large_image"> <!-- 兼容Twitter同时适配微信 -->
-    <meta name="twitter:image" content="https://baby111222.github.io/300x300.jpg"> <!-- 冗余备份，避免og:image失效 -->
-    <meta name="description" content="自定义你的页面核心描述，与og:description一致（微信备份识别）">
-    
-    <title>自定义你的页面标题（与og:title一致）</title>
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>微信分享缩略图测试</title>
+  <meta name="description" content="这是一个测试网页，用于演示在微信内分享时如何显示自定义缩略图。">
 
-    
-<body>
-    <!-- 页面正文内容（保留你的原有内容，或添加以下标准化结构，提升微信识别容错率） -->    
-    
-    <div><img src="https://baby111222.github.io/300x300.jpg" width="0" height="0" />
-        <!-- 正文首图（微信备用抓取逻辑：若OGP标签失效，会提取正文第一张图） -->
-        <img src="https://baby111222.github.io/300x300.jpg" alt="页面封面图" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
-        <h1 style="font-size: 24px; margin: 20px 0;">正文页码标题啦</h1>
-        <p style="font-size: 16px; line-height: 1.6;">你的页面正文内容啦啦啦.. </p>
-    </div>
+  <!-- Open Graph 元信息 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="微信分享缩略图测试页">
+  <meta property="og:description" content="这是一个测试网页，用于演示如何在微信中分享时显示自定义缩略图。">
+  <meta property="og:image" content="https://baby111222.github.io/300x300.jpg">
+  <meta property="og:url" content="https://baby111222.github.io/">
+  <meta property="og:site_name" content="baby111222 测试站">
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+
+  <!-- 防止微信爬虫抓不到图，添加可抓取图 -->
+  <div style="height:0; overflow:hidden;">
+    <img src="https://baby111222.github.io/300x300.jpg" alt="缩略图" width="300" height="300" loading="eager">
+  </div>
+</head>
+<body style="font-family: system-ui, sans-serif; padding: 20px; text-align: center;">
+  <h1>微信分享缩略图测试页</h1>
+  <p>这是一个测试页面，用于验证微信分享时能否显示自定义缩略图。</p>
+  <img src="https://baby111222.github.io/300x300.jpg" alt="缩略图示例" width="300" height="300" style="border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.15); margin-top: 10px;">
+  <p style="margin-top:20px; color:#666;">复制链接到微信聊天框测试分享效果：</p>
+  <code>https://baby111222.github.io/</code>
 </body>
 </html>
