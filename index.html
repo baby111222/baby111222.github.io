@@ -1,17 +1,318 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <!-- OG标签（og:image已替换为可访问链接） -->
-  <meta property="og:title" content="世界互联网大会乌镇峰会" />
-  <meta property="og:type" content="event" />
-  <meta property="og:url" content="https://baby111222.github.io/" /> <!-- 替换为你的GitHub Pages实际域名 -->
-  <meta property="og:image" content="https://picsum.photos/id/180/800/450" /> <!-- 800x450像素的风景图，适配分享比例 -->
-  <meta property="og:description" content="聚焦数字未来，共话互联网发展新机遇" /> <!-- 新增描述，让分享更完整 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 基础SEO标签 -->
+    <title>微信分享测试页面 - 完整OG标签示例</title>
+    <meta name="description" content="这是一个演示微信分享功能的页面，包含完整的OG标签配置，确保在微信中正确显示缩略图和描述">
+    
+    <!-- Open Graph 标签 (微信分享使用) -->
+    <meta property="og:title" content="微信分享测试页面 - 完整OG标签示例">
+    <meta property="og:description" content="演示微信分享功能，包含完整OG标签配置，确保正确显示缩略图">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://baby111222.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="微信分享测试">
+    
+    <!-- 微信专用标签 -->
+    <meta property="wechat:page_title" content="微信分享测试页面">
+    
+    <!-- Twitter Card 标签 (可选) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="微信分享测试页面">
+    <meta name="twitter:description" content="演示微信分享功能，包含完整OG标签配置">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- 其他重要标签 -->
+    <link rel="canonical" href="https://baby111222.github.io/">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 32px;
+            background: linear-gradient(90deg, #3498db, #2c3e50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .description {
+            color: #7f8c8d;
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            padding: 20px 0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        
+        h2 {
+            color: #3498db;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .tips {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        
+        .tips ul {
+            margin-left: 20px;
+        }
+        
+        .tips li {
+            margin-bottom: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #95a5a6;
+            font-size: 14px;
+        }
+        
+        .qr-code {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .qr-code img {
+            max-width: 200px;
+            border: 1px solid #eee;
+            padding: 10px;
+            background: white;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(52, 152, 219, 0.4);
+        }
+        
+        .og-preview {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+        
+        .og-preview h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .preview-card {
+            display: flex;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .preview-image {
+            width: 120px;
+            height: 120px;
+            background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .preview-content {
+            padding: 10px;
+            flex: 1;
+        }
+        
+        .preview-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .preview-description {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        
+        .preview-url {
+            font-size: 12px;
+            color: #3498db;
+        }
+        
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 <body>
-  <h1>乌镇峰会详情</h1>
-  <!-- 页面内也添加图片，和OG图一致，视觉统一 -->
-  <img src="https://picsum.photos/id/180/800/450" alt="乌镇峰会相关场景" style="max-width:100%;margin-top:20px;">
+    <div class="container">
+        <header>
+            <h1>微信分享测试页面</h1>
+            <p class="description">完整的OG标签配置示例，确保在微信中正确显示缩略图和描述</p>
+        </header>
+        
+        <div class="content">
+            <div class="section">
+                <h2>微信分享预览</h2>
+                <p>以下模拟了在微信中分享此页面时的显示效果：</p>
+                
+                <div class="og-preview">
+                    <h3>微信分享预览效果</h3>
+                    <div class="preview-card">
+                        <div class="preview-image"></div>
+                        <div class="preview-content">
+                            <div class="preview-title">微信分享测试页面 - 完整OG标签示例</div>
+                            <div class="preview-description">演示微信分享功能，包含完整OG标签配置，确保正确显示缩略图</div>
+                            <div class="preview-url">baby111222.github.io</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tips">
+                    <p><strong>OG图片要求：</strong></p>
+                    <ul>
+                        <li>图片尺寸：建议300×300像素以上</li>
+                        <li>图片格式：JPG或PNG</li>
+                        <li>图片大小：小于300KB</li>
+                        <li>图片URL：必须是完整的HTTPS地址</li>
+                        <li>当前使用的图片：来自Unsplash的科技主题图片</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>OG标签配置</h2>
+                <p>本页面使用了以下OG标签：</p>
+                
+                <div class="code-block">
+&lt;meta property="og:title" content="微信分享测试页面 - 完整OG标签示例"&gt;
+&lt;meta property="og:description" content="演示微信分享功能，包含完整OG标签配置，确保正确显示缩略图"&gt;
+&lt;meta property="og:image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"&gt;
+&lt;meta property="og:url" content="https://baby111222.github.io/"&gt;
+&lt;meta property="og:type" content="website"&gt;
+&lt;meta property="og:site_name" content="微信分享测试"&gt;
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>测试方法</h2>
+                <p>1. 在微信中打开此页面</p>
+                <p>2. 点击右上角菜单，选择"分享到朋友圈"或"发送给朋友"</p>
+                <p>3. 查看分享卡片是否显示正确的缩略图和描述</p>
+                
+                <button class="btn" onclick="testWechatShare()">测试微信分享</button>
+            </div>
+            
+            <div class="qr-code">
+                <h2>微信扫描测试</h2>
+                <p>使用微信扫描二维码，查看分享效果</p>
+                <div style="width: 200px; height: 200px; background: #f0f0f0; margin: 0 auto; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <div style="text-align: center; color: #7f8c8d;">
+                        <p>二维码位置</p>
+                        <p>请使用微信扫描</p>
+                    </div>
+                </div>
+                <p style="margin-top: 10px; font-size: 14px; color: #7f8c8d;">将二维码图片替换为您的实际二维码</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 微信分享测试页面. 保留所有权利.</p>
+            <p>https://baby111222.github.io/</p>
+        </footer>
+    </div>
+    
+    <script>
+        // 微信分享测试功能
+        function testWechatShare() {
+            alert('请复制此链接在微信中分享测试:\n' + window.location.href + '\n\n如果分享后没有显示正确图片，请尝试在URL后添加参数如 "?v=2" 强制刷新缓存');
+        }
+        
+        // 显示当前OG图片
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('页面加载完成');
+            console.log('OG图片URL: https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+        });
+    </script>
 </body>
 </html>
