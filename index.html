@@ -4,586 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 基础SEO标签 -->
-    <title>微信分享测试页面 - 完整微信专用标签示例</title>
-    <meta name="description" content="这是一个演示微信分享功能的页面，包含完整的微信专用标签配置，确保在微信中最佳显示效果">
-    <meta name="keywords" content="微信分享,OG标签,微信网页开发,微信JS-SDK">
+    <!-- 核心 Open Graph 协议 - 仿中新网样式 -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://test.wind.com.cn/indices/IndexBriefing?date=20251104" />
+    <meta property="og:title" content="万得热门指数速递 - 2025年11月04日市场简报" />
+    <meta property="og:description" content="为您提供最新的万得热门指数数据与市场动态分析，涵盖主要股指表现、行业热点追踪及投资机会洞察。" />
+    <meta property="og:image" content="https://test.wind.com.cn/static/images/wechat-share/indices-briefing-20251104.jpg" />
+    <meta property="og:site_name" content="万得指数" />
     
-    <!-- Open Graph 标签 (微信分享使用) -->
-    <meta property="og:title" content="微信分享测试页面 - 完整微信专用标签示例">
-    <meta property="og:description" content="演示微信分享功能，包含完整微信专用标签配置，确保在微信中最佳显示效果和分享体验">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:url" content="https://baby111222.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="微信分享测试平台">
-    <meta property="og:locale" content="zh_CN">
-    
-    <!-- 微信专用标签 -->
-    <meta property="wechat:page_title" content="微信分享测试页面">
-    <meta property="wechat:page_image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
-    <meta property="wechat:description" content="专为微信优化的分享页面，包含完整的微信专用标签配置">
-    <meta property="wechat:app_id" content="wx1234567890abcdef">
-    <meta property="wechat:page_type" content="article">
-    
-    <!-- 微信分享补充标签 -->
-    <meta name="wechat:disable_zoom" content="no">
-    <meta name="wechat:enable_pull_refresh" content="yes">
-    <meta name="wechat:miniprogram" content="false">
-    
-    <!-- 移动端优化标签 -->
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="微信分享测试">
-    <meta name="msapplication-tap-highlight" content="no">
-    
-    <!-- Twitter Card 标签 -->
+    <!-- Twitter Card 兼容 -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="微信分享测试页面">
-    <meta name="twitter:description" content="演示微信分享功能，包含完整微信专用标签配置">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+    <meta name="twitter:title" content="万得热门指数速递 - 2025年11月04日市场简报">
+    <meta name="twitter:description" content="为您提供最新的万得热门指数数据与市场动态分析，涵盖主要股指表现、行业热点追踪及投资机会洞察。">
+    <meta name="twitter:image" content="https://test.wind.com.cn/static/images/wechat-share/indices-briefing-20251104.jpg">
     
-    <!-- 其他重要标签 -->
-    <link rel="canonical" href="https://baby111222.github.io/">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔗</text></svg>">
+    <!-- 常规SEO标签 -->
+    <meta name="description" content="为您提供最新的万得热门指数数据与市场动态分析，涵盖主要股指表现、行业热点追踪及投资机会洞察。" />
+    <title>万得热门指数速递 - 2025年11月04日市场简报</title>
     
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-        
-        :root {
-            --wechat-green: #07C160;
-            --wechat-dark: #1A1A1A;
-            --wechat-light: #F8F8F8;
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
         }
         
         body {
-            font-family: 'PingFang SC', 'Helvetica Neue', Arial, 'Microsoft YaHei', sans-serif;
-            line-height: 1.6;
+            background-color: #f5f5f5;
             color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
+            line-height: 1.6;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 750px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border-radius: 12px;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
-        .wechat-header {
-            text-align: center;
-            padding: 30px 0;
-            border-bottom: 2px solid var(--wechat-green);
-            margin-bottom: 30px;
-            background: linear-gradient(135deg, var(--wechat-green) 0%, #05a850 100%);
+        header {
+            background: linear-gradient(135deg, #1a5fb4 0%, #2d7dda 100%);
             color: white;
-            border-radius: 12px 12px 0 0;
-            margin: -20px -20px 30px -20px;
+            padding: 20px 15px;
+            text-align: center;
         }
         
-        h1 {
-            margin-bottom: 15px;
-            font-size: 32px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
         
-        .description {
-            font-size: 18px;
-            max-width: 600px;
-            margin: 0 auto;
+        .date {
+            font-size: 14px;
             opacity: 0.9;
         }
         
-        .content {
-            padding: 20px 0;
+        .article-header {
+            padding: 20px 15px;
+            border-bottom: 1px solid #eee;
         }
         
-        .section {
-            margin-bottom: 30px;
-            padding: 25px;
-            border-radius: 10px;
-            background: var(--wechat-light);
-            border-left: 4px solid var(--wechat-green);
+        .article-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            line-height: 1.4;
         }
         
-        h2 {
-            color: var(--wechat-green);
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #e0e0e0;
+        .article-meta {
+            color: #666;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .article-content {
+            padding: 20px 15px;
+        }
+        
+        .article-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .index-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .index-table th {
+            background-color: #f8f9fa;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        .index-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        .positive {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .negative {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+        
+        .chart-placeholder {
+            background: #f8f9fa;
+            height: 200px;
+            margin: 20px 0;
             display: flex;
             align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            color: #666;
+            border: 1px dashed #ddd;
         }
         
-        h2::before {
-            content: "◆";
-            margin-right: 10px;
-            color: var(--wechat-green);
+        .share-section {
+            background: #f8f9fa;
+            padding: 20px 15px;
+            margin-top: 30px;
+            border-radius: 5px;
+            text-align: center;
         }
         
-        p {
+        .share-section h3 {
             margin-bottom: 15px;
+            color: #1a5fb4;
         }
         
-        .tips {
-            background-color: #e8f4fc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3498db;
-            margin: 20px 0;
-        }
-        
-        .tips ul {
-            margin-left: 20px;
-        }
-        
-        .tips li {
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 15px;
-        }
-        
-        .tips li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--wechat-green);
-            font-weight: bold;
+        .share-tips {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
         }
         
         footer {
             text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #95a5a6;
-            font-size: 14px;
-        }
-        
-        .qr-code {
-            text-align: center;
-            margin: 30px 0;
-            padding: 25px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border: 2px dashed var(--wechat-green);
-        }
-        
-        .qr-code img {
-            max-width: 200px;
-            border: 1px solid #eee;
-            padding: 10px;
-            background: white;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: linear-gradient(90deg, var(--wechat-green), #05a850);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 10px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(7, 193, 96, 0.3);
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(7, 193, 96, 0.4);
-        }
-        
-        .btn-secondary {
-            background: linear-gradient(90deg, #3498db, #2980b9);
-            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-        }
-        
-        .btn-secondary:hover {
-            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
-        }
-        
-        .og-preview {
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border: 1px solid #e0e0e0;
-        }
-        
-        .og-preview h3 {
-            color: var(--wechat-dark);
-            margin-bottom: 20px;
-            text-align: center;
-            color: var(--wechat-green);
-        }
-        
-        .preview-card {
-            display: flex;
-            border: 1px solid #e0e0e0;
-            border-radius: 10px;
-            overflow: hidden;
-            max-width: 400px;
-            margin: 0 auto;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        .preview-image {
-            width: 120px;
-            height: 120px;
-            background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80');
-            background-size: cover;
-            background-position: center;
-            flex-shrink: 0;
-        }
-        
-        .preview-content {
-            padding: 12px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        
-        .preview-title {
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: var(--wechat-dark);
-            font-size: 16px;
-            line-height: 1.3;
-        }
-        
-        .preview-description {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin-bottom: 8px;
-            line-height: 1.4;
-            flex-grow: 1;
-        }
-        
-        .preview-url {
+            padding: 20px 15px;
+            color: #999;
             font-size: 12px;
-            color: var(--wechat-green);
+            border-top: 1px solid #eee;
+            margin-top: 30px;
         }
         
-        .code-block {
-            background: #2c3e50;
-            color: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-            overflow-x: auto;
-            margin: 15px 0;
-            line-height: 1.5;
-            border-left: 4px solid var(--wechat-green);
-        }
-        
-        .tag-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-        
-        .tag-item {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid var(--wechat-green);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        
-        .tag-name {
-            font-weight: bold;
-            color: var(--wechat-green);
-            margin-bottom: 5px;
-            font-family: 'Courier New', monospace;
-        }
-        
-        .tag-value {
-            color: #666;
-            font-size: 14px;
-            word-break: break-all;
-        }
-        
-        .wechat-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 25px 0;
-        }
-        
-        .feature {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            border-top: 3px solid var(--wechat-green);
-        }
-        
-        .feature-icon {
-            font-size: 36px;
-            margin-bottom: 15px;
-        }
-        
-        .feature-title {
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: var(--wechat-dark);
-        }
-        
-        .feature-desc {
-            font-size: 14px;
-            color: #666;
-        }
-        
-        .debug-info {
-            background: #fff8e1;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #ffc107;
-        }
-        
-        .button-group {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-        
-        @media (max-width: 600px) {
-            .button-group {
-                flex-direction: column;
+        @media (max-width: 480px) {
+            .article-title {
+                font-size: 20px;
             }
             
-            .btn {
-                width: 100%;
-                text-align: center;
+            .index-table {
+                font-size: 14px;
+            }
+            
+            .index-table th, .index-table td {
+                padding: 10px 8px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="wechat-header">
-            <h1>微信分享测试页面</h1>
-            <p class="description">完整的微信专用标签配置示例，确保在微信中最佳显示效果和分享体验</p>
+        <header>
+            <div class="logo">万得指数</div>
+            <div class="date">2025年11月04日 星期一</div>
         </header>
         
-        <div class="content">
-            <div class="section">
-                <h2>微信分享预览</h2>
-                <p>以下模拟了在微信中分享此页面时的显示效果：</p>
-                
-                <div class="og-preview">
-                    <h3>微信分享预览效果</h3>
-                    <div class="preview-card">
-                        <div class="preview-image"></div>
-                        <div class="preview-content">
-                            <div class="preview-title">微信分享测试页面 - 完整微信专用标签示例</div>
-                            <div class="preview-description">演示微信分享功能，包含完整微信专用标签配置，确保在微信中最佳显示效果和分享体验</div>
-                            <div class="preview-url">baby111222.github.io</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="tips">
-                    <p><strong>微信专用标签已配置：</strong></p>
-                    <ul>
-                        <li>wechat:page_title - 微信页面标题</li>
-                        <li>wechat:page_image - 微信专用图片</li>
-                        <li>wechat:description - 微信专用描述</li>
-                        <li>wechat:app_id - 关联的微信公众号APP ID</li>
-                        <li>wechat:page_type - 页面类型配置</li>
-                        <li>移动端优化标签 - 提升微信内体验</li>
-                    </ul>
-                </div>
+        <div class="article-header">
+            <h1 class="article-title">万得热门指数速递 - 2025年11月04日市场简报</h1>
+            <div class="article-meta">
+                <span>来源：万得指数研究中心</span>
+                <span>发布时间：2025-11-04 09:30</span>
+            </div>
+        </div>
+        
+        <div class="article-content">
+            <p>为您提供最新的万得热门指数数据与市场动态分析，涵盖主要股指表现、行业热点追踪及投资机会洞察。</p>
+            
+            <h2>主要指数表现</h2>
+            <table class="index-table">
+                <thead>
+                    <tr>
+                        <th>指数名称</th>
+                        <th>最新点位</th>
+                        <th>涨跌幅</th>
+                        <th>成交额(亿元)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>上证指数</td>
+                        <td>3,250.68</td>
+                        <td class="positive">+1.25%</td>
+                        <td>4,520.36</td>
+                    </tr>
+                    <tr>
+                        <td>深证成指</td>
+                        <td>11,580.42</td>
+                        <td class="positive">+0.89%</td>
+                        <td>5,820.15</td>
+                    </tr>
+                    <tr>
+                        <td>创业板指</td>
+                        <td>2,420.75</td>
+                        <td class="negative">-0.32%</td>
+                        <td>2,150.78</td>
+                    </tr>
+                    <tr>
+                        <td>沪深300</td>
+                        <td>3,980.25</td>
+                        <td class="positive">+0.75%</td>
+                        <td>3,250.42</td>
+                    </tr>
+                    <tr>
+                        <td>中证500</td>
+                        <td>6,250.36</td>
+                        <td class="positive">+1.52%</td>
+                        <td>1,980.65</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>行业板块涨跌榜</h2>
+            <div class="chart-placeholder">
+                行业板块涨跌对比图 - 实际环境中替换为真实图表
             </div>
             
-            <div class="section">
-                <h2>微信专用标签配置</h2>
-                <p>本页面使用了以下微信专用标签：</p>
-                
-                <div class="tag-list">
-                    <div class="tag-item">
-                        <div class="tag-name">wechat:page_title</div>
-                        <div class="tag-value">微信分享测试页面</div>
-                    </div>
-                    <div class="tag-item">
-                        <div class="tag-name">wechat:page_image</div>
-                        <div class="tag-value">https://images.unsplash.com/photo-1550745165-9bc0b252726f</div>
-                    </div>
-                    <div class="tag-item">
-                        <div class="tag-name">wechat:description</div>
-                        <div class="tag-value">专为微信优化的分享页面，包含完整的微信专用标签配置</div>
-                    </div>
-                    <div class="tag-item">
-                        <div class="tag-name">wechat:app_id</div>
-                        <div class="tag-value">wx1234567890abcdef</div>
-                    </div>
-                    <div class="tag-item">
-                        <div class="tag-name">wechat:page_type</div>
-                        <div class="tag-value">article</div>
-                    </div>
-                    <div class="tag-item">
-                        <div class="tag-name">format-detection</div>
-                        <div class="tag-value">telephone=no (禁用自动识别电话号码)</div>
-                    </div>
-                </div>
-                
-                <div class="code-block">
-&lt;!-- 微信专用标签 --&gt;
-&lt;meta property="wechat:page_title" content="微信分享测试页面"&gt;
-&lt;meta property="wechat:page_image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f"&gt;
-&lt;meta property="wechat:description" content="专为微信优化的分享页面，包含完整的微信专用标签配置"&gt;
-&lt;meta property="wechat:app_id" content="wx1234567890abcdef"&gt;
-&lt;meta property="wechat:page_type" content="article"&gt;
-
-&lt;!-- 移动端优化标签 --&gt;
-&lt;meta name="format-detection" content="telephone=no"&gt;
-&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
-&lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
-                </div>
-            </div>
+            <h2>市场热点分析</h2>
+            <p>今日A股市场整体呈现震荡上行态势，上证指数收盘上涨1.25%，报3250.68点。科技板块表现强势，尤其是人工智能和半导体相关概念股涨幅居前。</p>
             
-            <div class="section">
-                <h2>微信分享功能</h2>
-                
-                <div class="wechat-features">
-                    <div class="feature">
-                        <div class="feature-icon">📱</div>
-                        <div class="feature-title">移动端优化</div>
-                        <div class="feature-desc">专为微信内置浏览器优化，确保最佳显示效果</div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🖼️</div>
-                        <div class="feature-title">缩略图支持</div>
-                        <div class="feature-desc">自动生成美观的分享卡片和缩略图</div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">⚡</div>
-                        <div class="feature-title">快速加载</div>
-                        <div class="feature-desc">优化资源加载，提升在微信中的打开速度</div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🔧</div>
-                        <div class="feature-title">调试工具</div>
-                        <div class="feature-desc">内置调试功能，帮助排查分享问题</div>
-                    </div>
-                </div>
-                
-                <div class="button-group">
-                    <button class="btn" onclick="testWechatShare()">测试微信分享</button>
-                    <button class="btn btn-secondary" onclick="clearWechatCache()">清除微信缓存</button>
-                    <button class="btn btn-secondary" onclick="showDebugInfo()">显示调试信息</button>
-                </div>
-                
-                <div class="debug-info" id="debugInfo" style="display: none;">
-                    <h3>调试信息</h3>
-                    <p><strong>User Agent:</strong> <span id="userAgent"></span></p>
-                    <p><strong>当前URL:</strong> <span id="currentUrl"></span></p>
-                    <p><strong>OG图片状态:</strong> <span id="ogImageStatus">加载中...</span></p>
-                    <p><strong>微信环境检测:</strong> <span id="wechatEnv">检测中...</span></p>
-                </div>
-            </div>
+            <p>从资金流向来看，北向资金今日净流入85.42亿元，连续第三个交易日净流入。其中，沪股通净流入45.68亿元，深股通净流入39.74亿元。</p>
             
-            <div class="qr-code">
-                <h2>微信扫描测试</h2>
-                <p>使用微信扫描二维码，查看分享效果</p>
-                <div style="width: 200px; height: 200px; background: #f0f0f0; margin: 0 auto; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <div style="text-align: center; color: #7f8c8d;">
-                        <p>🔗</p>
-                        <p>二维码位置</p>
-                        <p>请使用微信扫描</p>
-                    </div>
-                </div>
-                <p style="margin-top: 10px; font-size: 14px; color: #7f8c8d;">将二维码图片替换为您的实际二维码</p>
+            <p>市场分析师指出，当前市场情绪逐步回暖，投资者信心有所恢复。建议关注业绩确定性强的成长板块和估值合理的价值板块。</p>
+            
+            <div class="share-section">
+                <h3>微信分享测试</h3>
+                <p>将此页面分享到微信，查看缩略图效果</p>
+                <p class="share-tips">提示：如果首次分享未显示缩略图，请尝试在链接后添加随机参数如 &t=123 后重新分享</p>
             </div>
         </div>
         
         <footer>
-            <p>© 2025 微信分享测试页面 - 包含完整微信专用标签配置</p>
-            <p>https://baby111222.github.io/</p>
+            <p>© 2025 万得指数 版权所有 | 数据仅供参考，投资有风险，入市需谨慎</p>
+            <p>客服热线：400-xxx-xxxx | 官网：www.wind.com.cn</p>
         </footer>
     </div>
-    
-    <script>
-        // 微信分享测试功能
-        function testWechatShare() {
-            const url = window.location.href + '?t=' + new Date().getTime();
-            alert('请复制此链接在微信中分享测试:\n' + url + '\n\n提示：如果分享后没有显示正确图片，请尝试多次分享或等待缓存更新');
-        }
-        
-        // 清除微信缓存提示
-        function clearWechatCache() {
-            alert('要清除微信缓存，请尝试：\n\n1. 在URL后添加随机参数如 "?v=2"\n2. 重启微信应用\n3. 等待24小时自动缓存更新\n4. 使用微信调试工具刷新');
-        }
-        
-        // 显示调试信息
-        function showDebugInfo() {
-            const debugInfo = document.getElementById('debugInfo');
-            const userAgent = document.getElementById('userAgent');
-            const currentUrl = document.getElementById('currentUrl');
-            const ogImageStatus = document.getElementById('ogImageStatus');
-            const wechatEnv = document.getElementById('wechatEnv');
-            
-            userAgent.textContent = navigator.userAgent;
-            currentUrl.textContent = window.location.href;
-            
-            // 检测微信环境
-            const isWechat = /MicroMessenger/i.test(navigator.userAgent);
-            wechatEnv.textContent = isWechat ? '检测到微信环境' : '非微信环境';
-            
-            // 检测OG图片状态
-            const ogImage = new Image();
-            ogImage.src = 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80';
-            ogImage.onload = function() {
-                ogImageStatus.textContent = '图片加载成功';
-                ogImageStatus.style.color = 'green';
-            };
-            ogImage.onerror = function() {
-                ogImageStatus.textContent = '图片加载失败';
-                ogImageStatus.style.color = 'red';
-            };
-            
-            debugInfo.style.display = 'block';
-        }
-        
-        // 页面加载完成后的初始化
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('微信分享测试页面加载完成');
-            console.log('当前使用的OG图片: https://images.unsplash.com/photo-1550745165-9bc0b252726f');
-            
-            // 自动检测是否在微信环境中
-            if (/MicroMessenger/i.test(navigator.userAgent)) {
-                console.log('检测到微信环境');
-            }
-        });
-        
-        // 模拟微信JS-SDK功能
-        window.wxConfig = {
-            appId: 'wx1234567890abcdef',
-            timestamp: Math.floor(Date.now() / 1000),
-            nonceStr: 'wx_share_demo',
-            signature: 'demo_signature_123456'
-        };
-    </script>
 </body>
 </html>
